@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 5000;
 
 //import library CORS
 const cors = require("cors");
@@ -21,6 +21,12 @@ app.use(bodyParser.json());
 const postsRouter = require("./routes/posts");
 app.use("/api/posts", postsRouter); // use route posts di Express
 
+app.listen(process.env.PORT || 3000, function () {
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+/*
 app.listen(port, () => {
   console.log(`app running at http://localhost:${port}`);
 });
+
+*/
