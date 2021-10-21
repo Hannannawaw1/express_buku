@@ -1,10 +1,11 @@
 {
   "name": "express_buku",
   "version": "1.0.0",
-  "description": "",
+  "description": "restapi hosted in heroku",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,12 +16,15 @@
   "bugs": {
     "url": "https://github.com/Hannannawaw1/express_buku/issues"
   },
-  "homepage": "https://github.com/Hannannawaw1/express_buku#readme",
+  "homepage": "https://tkjbindo.herokuapp.com/",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-validator": "^6.12.1",
     "mysql": "^2.18.1"
+  },
+  "engines": {
+    "node": "10.15.1"
   }
 }
