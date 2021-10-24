@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 //import route posts
 const postsRouter = require("./routes/posts");
-app.use("/api/posts", postsRouter); // use route posts di Express
+app.use("/posts", postsRouter); // use route posts di Express
 
 app.listen(process.env.PORT || 5000, function () {
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
